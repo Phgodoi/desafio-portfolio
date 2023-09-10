@@ -36,12 +36,7 @@
   </head>
   <body>
     <header class="profile_header">
-      <img
-        src="#"
-        alt="#"
-        class="profile_image"
-        id="profile.img"
-      />
+      <img src="#" alt="#" class="profile_image" id="profile.img" />
 
       <h1 class="title">
         Olá, <br />
@@ -50,7 +45,10 @@
 
       <div class="profile_infos">
         <p><i class="fa-solid fa-terminal"></i>Júnior Developer</p>
-        <p><i class="fa-solid fa-location-pin"></i><span id="profile.location">.....</span></p>
+        <p>
+          <i class="fa-solid fa-location-pin"></i
+          ><span id="profile.location">.....</span>
+        </p>
         <p>
           <i class="fa-brands fa-whatsapp"></i
           ><a href="tel:(11) 99878-3815">(11) 99878-3815</a>
@@ -60,7 +58,6 @@
           ><a href="mailto:ex@mail.com">pauloh.godoi94@gmail.com</a>
         </p>
       </div>
-
     </header>
 
     <!-- idiomas -->
@@ -79,25 +76,16 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="container open">
+    <section class="container">
       <button class="btn" type="button">
         <h2>Portfólio</h2>
         <i class="fa-solid fa-angle-down fa-lg"></i>
       </button>
       <div class="content">
-        <ul class="portfolio">
+        <ul class="portfolio" id="profile.portfolio">
           <li>
-
             <h3 class="title github"></h3>
-            <a href="#" target="_blank" class="desc">Veja no github</a>
-          </li>
-          <li>
-            <h3 class="title github">Criando um app</h3>
-            <a href="#">www.google.com</a>
-          </li>
-          <li>
-            <h3 class="title github">Criando um app</h3>
-            <a href="#">www.google.com</a>
+            <a href="#" target="_blank"></a>
           </li>
         </ul>
       </div>
@@ -161,6 +149,6 @@
 
     <script src="./assets/js/api.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" defer></script>
   </body>
 </html>

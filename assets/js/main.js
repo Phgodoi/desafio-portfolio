@@ -11,11 +11,28 @@ function updateProfileInfo(profileData) {
 }
 
 function updatePortfolio(profileData) {
-  const userPortfolio = document.querySelector("h3.title.github");
-  userPortfolio.innerText = profileData[2].name;
-  const desc = document.querySelector('.desc')
-  desc.href = profileData[2].html_url;
+  const portfolio = document.getElementById("profile.portfolio");
+  console.log(portfolio);
+  portfolio.innerHTML = profileData
+    .map((project) => {
+      return `
+    
+      <li>
+          <h3 class="title github">${project.name}</h3>
+          <a href="${project.html_url}" target="_blank"><i class="fab fa-github"></i>
+          Veja no github</a>
+      </li>
+    `;
+    })
+    .join("");
 }
+
+// function updatePortfolio(profileData) {
+//   const userPortfolio = document.querySelector("h3.title.github");
+//   userPortfolio.innerText = profileData[2].name;
+//   const desc = document.querySelector('.desc')
+//   desc.href = profileData[2].html_url;
+// }
 
 (async () => {
   const profileData = await fetchProfileData();

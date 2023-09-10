@@ -20,8 +20,6 @@ function adicionarIconesNaLista(seletor, classeIcone) {
     iten.insertBefore(icon, iten.firstChild);
   });
 }
-
 adicionarIconesNaLista(".itens li", "fa-solid fa-check");
-adicionarIconesNaLista(".github", "fa-brands fa-github");
 adicionarIconesNaLista(".experience p.period", "fa-regular fa-calendar");
 adicionarIconesNaLista(".skills .soft_skills li","fa-regular fa-chess-bishop fa-sm");
