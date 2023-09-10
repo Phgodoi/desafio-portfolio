@@ -22,6 +22,6 @@ function adicionarIconesNaLista(seletor, classeIcone) {
 }
 
 adicionarIconesNaLista(".itens li", "fa-solid fa-check");
-adicionarIconesNaLista(".portfolio h3.title.github", "fa-brands fa-github");
+adicionarIconesNaLista(".github", "fa-brands fa-github");
 adicionarIconesNaLista(".experience p.period", "fa-regular fa-calendar");
 adicionarIconesNaLista(".skills .soft_skills li","fa-regular fa-chess-bishop fa-sm");
