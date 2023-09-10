@@ -1,0 +1,22 @@
+.itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+    
+    list-style: none;
+}
+.itens li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+

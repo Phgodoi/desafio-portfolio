@@ -1,0 +1,20 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    list-style: none;
+}
+
+.experience li.period {
+    display: flex;
+    flex-direction: row;
+    margin: .5rem 0;
+}
+
+.experience h3.title{
+    margin: .5rem 0;
+}
+
